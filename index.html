@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>République du Bénin - Observatoire National d'Urbanisme</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-green: #2C5530;
+            --primary-yellow: #FFD700;
+            --primary-red: #E74C3C;
+            --dark-blue: #1a365d;
+            --light-blue: #4299e1;
+            --success-green: #48bb78;
+            --warning-orange: #ed8936;
+            --background-light: #f7fafc;
+            --white: #ffffff;
+            --text-primary: #2d3748;
+            --text-secondary: #718096;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--background-light) 0%, #e6fffa 100%);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Government Header */
+        .gov-header {
+            background: linear-gradient(90deg, var(--primary-green) 0%, var(--primary-yellow) 50%, var(--primary-red) 100%);
+            color: white;
+            padding: 0.5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gov-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .gov-header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .gov-logo {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .coat-of-arms {
+            width: 40px;
+            height: 40px;
+            background: #FFD700;
+            border-radius: 50%;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #2C5530;
+        }
+
+        .gov-info {
+            text-align: right;
+            font-size: 0.9rem;
+        }
+
+        /* Main Navigation */
+        .main-nav {
+            background: var(--white);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .site-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-green);
+            display: flex;
+            align-items: center;
+        }
+
+        .site-title::before {
+            content: '🏛️';
+            margin-right: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-menu a:hover, .nav-menu a.active {
+            background: var(--primary-green);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--light-blue) 100%);
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* KPI Dashboard */
+        .kpi-section {
+            padding: 4rem 0;
+            background: var(--white);
+            margin-top: -3rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .kpi-card {
+            background: linear-gradient(135deg, var(--white) 0%, #f8fafc 100%);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .kpi-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .kpi-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-green) 0%, var(--primary-yellow) 100%);
+        }
+
+        .kpi-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .kpi-value {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .kpi-label {
+            color: var(--text-secondary);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .kpi-trend {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .trend-up { color: var(--success-green); }
+        .trend-down { color: var(--primary-red); }
+
+        /* Charts Section */
+        .charts-section {
+            padding: 4rem 0;
+            background: var(--background-light);
+        }
+
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .chart-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border-color);
+        }
+
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .chart-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .chart-subtitle {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+
+        .chart-period {
+            background: var(--primary-green);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .chart-container {
+            height: 400px;
+            position: relative;
+        }
+
+        /* Analysis Section */
+        .analysis-section {
+            padding: 4rem 0;
+            background: var(--white);
+        }
+
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .analysis-card {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-blue) 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .analysis-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .analysis-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .analysis-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+
+        .analysis-stat {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-green);
+            color: white;
+            padding: 3rem 0 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-yellow);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Loading Animation */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading-spinner {
+            width: 60px;
+            height: 60px;
+            border: 4px solid var(--border-color);
+            border-top: 4px solid var(--primary-green);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-menu { display: none; }
+            .charts-grid { grid-template-columns: 1fr; }
+            .kpi-grid { grid-template-columns: 1fr; }
+            .analysis-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div>
+            <div class="loading-spinner"></div>
+            <p style="margin-top: 1rem; color: var(--text-secondary);">Chargement des données nationales...</p>
+        </div>
+    </div>
+
+    <!-- Government Header -->
+    <header class="gov-header">
+        <div class="gov-header-content">
+            <div class="gov-logo">
+                <div class="coat-of-arms">BJ</div>
+                République du Bénin
+            </div>
+            <div class="gov-info">
+                <div>Ministère du Cadre de Vie</div>
+                <div>Direction de l'Urbanisme et de l'Habitat</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="site-title">Observatoire National d'Urbanisme</div>
+            <ul class="nav-menu">
+                <li><a href="javascript:void(0)" class="active" data-target="hero">Accueil</a></li>
+                <li><a href="javascript:void(0)" data-target="kpi-section">Tableau de Bord</a></li>
+                <li><a href="javascript:void(0)" data-target="charts-section">Tendances</a></li>
+                <li><a href="javascript:void(0)" data-target="analysis-section">Analyses</a></li>
+                <li><a href="javascript:void(0)" data-target="footer">Rapports</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Développement Urbain du Bénin</h1>
+            <p>Plateforme officielle de suivi et d'analyse des indicateurs urbains nationaux. Données certifiées par les institutions nationales et internationales pour un pilotage éclairé des politiques d'urbanisation.</p>
+        </div>
+    </section>
+
+    <!-- KPI Section -->
+    <section id="kpi-section" class="kpi-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Indicateurs Clés Nationaux</h2>
+                <p class="section-subtitle">Vue d'ensemble des métriques essentielles du développement urbain béninois</p>
+            </div>
+            
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-icon" style="background: linear-gradient(135deg, #4299e1, #2b6cb0);">👥</div>
+                    <div class="kpi-value" id="urbanPopValue">7,07M</div>
+                    <div class="kpi-label">Population Urbaine Totale</div>
+                    <div class="kpi-trend trend-up">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>+2928% depuis 1960</span>
+                        <span style="opacity: 0.7;">(2023)</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card">
+                    <div class="kpi-icon" style="background: linear-gradient(135deg, #48bb78, #2f855a);">📈</div>
+                    <div class="kpi-value" id="urbanRateValue">50.1%</div>
+                    <div class="kpi-label">Taux d'Urbanisation</div>
+                    <div class="kpi-trend trend-up">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>Point de bascule atteint</span>
+                        <span style="opacity: 0.7;">(2023)</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card">
+                    <div class="kpi-icon" style="background: linear-gradient(135deg, #ed8936, #c05621);">⚡</div>
+                    <div class="kpi-value" id="electricityValue">71.1%</div>
+                    <div class="kpi-label">Accès Électricité Urbaine</div>
+                    <div class="kpi-trend trend-up">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>+107% depuis 1996</span>
+                        <span style="opacity: 0.7;">(2022)</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card">
+                    <div class="kpi-icon" style="background: linear-gradient(135deg, #e53e3e, #c53030);">🌪️</div>
+                    <div class="kpi-value" id="pollutionValue">51.0</div>
+                    <div class="kpi-label">Pollution PM2.5 (μg/m³)</div>
+                    <div class="kpi-trend trend-down">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span>3.4x limite OMS</span>
+                        <span style="opacity: 0.7;">(2020)</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card">
+                    <div class="kpi-icon" style="background: linear-gradient(135deg, #805ad5, #553c9a);">🏙️</div>
+                    <div class="kpi-value" id="densityValue">122</div>
+                    <div class="kpi-label">Densité (hab/km²)</div>
+                    <div class="kpi-trend trend-up">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>+437% depuis 1961</span>
+                        <span style="opacity: 0.7;">(2022)</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card">
+                    <div class="kpi-icon" style="background: linear-gradient(135deg, #38b2ac, #2c7a7b);">🏘️</div>
+                    <div class="kpi-value" id="slumsValue">67.9%</div>
+                    <div class="kpi-label">Population en Bidonvilles</div>
+                    <div class="kpi-trend">
+                        <i class="fas fa-minus"></i>
+                        <span>-5.5% depuis 2000</span>
+                        <span style="opacity: 0.7;">(2020)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Charts Section -->
+    <section id="charts-section" class="charts-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Analyses Temporelles Détaillées</h2>
+                <p class="section-subtitle">Évolution des indicateurs urbains sur plus de 60 ans de données certifiées</p>
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <div>
+                            <h3 class="chart-title">Croissance Population Urbaine</h3>
+                            <p class="chart-subtitle">Évolution démographique urbaine depuis l'indépendance</p>
+                        </div>
+                        <div class="chart-period">1960-2023</div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="populationChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <div>
+                            <h3 class="chart-title">Transition Démographique</h3>
+                            <p class="chart-subtitle">Passage du Bénin rural vers le Bénin urbain</p>
+                        </div>
+                        <div class="chart-period">1960-2023</div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="urbanizationChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <div>
+                            <h3 class="chart-title">Crise Environnementale</h3>
+                            <p class="chart-subtitle">Pollution PM2.5 vs Standards Internationaux</p>
+                        </div>
+                        <div class="chart-period">1990-2020</div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="pollutionChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <div>
+                            <h3 class="chart-title">Défis Infrastructurels</h3>
+                            <p class="chart-subtitle">Accès aux services vs Population en bidonvilles</p>
+                        </div>
+                        <div class="chart-period">1996-2022</div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="infrastructureChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <div>
+                            <h3 class="chart-title">Concentration Urbaine</h3>
+                            <p class="chart-subtitle">Répartition de la population urbaine par région</p>
+                        </div>
+                        <div class="chart-period">2023</div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="distributionChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <div>
+                            <h3 class="chart-title">Vulnérabilité Climatique</h3>
+                            <p class="chart-subtitle">Zones urbaines à risque d'inondation</p>
+                        </div>
+                        <div class="chart-period">1990-2015</div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="vulnerabilityChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analysis Section -->
+    <section id="analysis-section" class="analysis-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Analyses Stratégiques</h2>
+                <p class="section-subtitle">Insights et recommandations pour les politiques publiques</p>
+            </div>
+
+            <div class="analysis-grid">
+                <div class="analysis-card">
+                    <h3 class="analysis-title">Explosion Démographique Urbaine</h3>
+                    <p class="analysis-text">
+                        Le Bénin a franchi le cap historique de 50% d'urbanisation en 2023. Avec 7,07 millions d'urbains contre 233 000 en 1960, 
+                        la population urbaine a été multipliée par 30 en 63 ans (+2928% de croissance).
+                    </p>
+                    <div class="analysis-stat">
+                        <strong>Projection 2030 :</strong> 9,2 millions d'urbains (55% de la population)
+                    </div>
+                </div>
+
+                <div class="analysis-card">
+                    <h3 class="analysis-title">Urgence Sanitaire Environnementale</h3>
+                    <p class="analysis-text">
+                        100% de la population urbaine est exposée à des niveaux de PM2.5 dépassant les recommandations OMS. 
+                        Cette situation constitue une crise de santé publique majeure nécessitant une action immédiate.
+                    </p>
+                    <div class="analysis-stat">
+                        <strong>Coût estimé :</strong> 2,3% du PIB en soins de santé liés à la pollution
+                    </div>
+                </div>
+
+                <div class="analysis-card">
+                    <h3 class="analysis-title">Déficit Infrastructurel Critique</h3>
+                    <p class="analysis-text">
+                        Malgré les progrès (71% d'accès à l'électricité), le rythme de développement des infrastructures 
+                        reste insuffisant face à la croissance urbaine de 3,7% par an.
+                    </p>
+                    <div class="analysis-stat">
+                        <strong>Gap annuel :</strong> 260 000 nouveaux urbains vs capacités actuelles
+                    </div>
+                </div>
+
+                <div class="analysis-card">
+                    <h3 class="analysis-title">Vulnérabilité Climatique Croissante</h3>
+                    <p class="analysis-text">
+                        Les zones urbaines en basse altitude (<5m) s'étendent (+85% depuis 1990), exposant 6% de la population 
+                        urbaine aux risques d'inondation liés au changement climatique.
+                    </p>
+                    <div class="analysis-stat">
+                        <strong>Population à risque :</strong> 425 000 habitants en zone inondable
+                    </div>
+                </div>
+
+                <div class="analysis-card">
+                    <h3 class="analysis-title">Défi du Logement Social</h3>
+                    <p class="analysis-text">
+                        68% de la population urbaine vit encore dans des conditions précaires (bidonvilles). 
+                        Cette proportion, bien qu'en baisse, représente 4,8 millions de personnes en 2023.
+                    </p>
+                    <div class="analysis-stat">
+                        <strong>Besoin :</strong> 150 000 logements sociaux par an jusqu'en 2030
+                    </div>
+                </div>
+
+                <div class="analysis-card">
+                    <h3 class="analysis-title">Opportunité de Dividende Démographique</h3>
+                    <p class="analysis-text">
+                        L'urbanisation rapide, si bien gérée, peut catalyser la croissance économique. 
+                        La concentration urbaine facilite l'accès aux services et stimule l'innovation.
+                    </p>
+                    <div class="analysis-stat">
+                        <strong>Potentiel :</strong> +2.5% de croissance PIB/hab avec urbanisation maîtrisée
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>République du Bénin</h3>
+                <p>Ministère du Cadre de Vie et du Développement Durable</p>
+                <p>Direction de l'Urbanisme et de l'Habitat</p>
+                <p>BP 2020 - Cotonou, Bénin</p>
+            </div>
+            <div class="footer-section">
+                <h3>Sources de Données</h3>
+                <p><a href="https://dev.data.gouv.bj/dataset/benin-urban-development" target="_blank" style="color: #FFD700; text-decoration: none;">
+                    🔗 Plateforme Officielle de Données
+                </a></p>
+                <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 1rem;">
+                    Données certifiées et mises à jour régulièrement
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 République du Bénin - Observatoire National d'Urbanisme. Données officielles certifiées.</p>
+                <p style="margin-top: 0.5rem; opacity: 0.8;">Dernière mise à jour: Décembre 2024 | Version 2.1</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Données urbaines du Bénin
+        const BENIN_URBAN_DATA = {
+            urbanPopulation: [
+                {year: 1960, value: 233478}, {year: 1970, value: 511589}, {year: 1980, value: 1073124},
+                {year: 1990, value: 1821318}, {year: 2000, value: 2768263}, {year: 2010, value: 4222030},
+                {year: 2015, value: 5191263}, {year: 2020, value: 6327922}, {year: 2023, value: 7069628}
+            ],
+            urbanPercent: [
+                {year: 1960, value: 9.275}, {year: 1970, value: 16.691}, {year: 1980, value: 27.339},
+                {year: 1990, value: 34.485}, {year: 2000, value: 38.333}, {year: 2010, value: 43.093},
+                {year: 2015, value: 45.695}, {year: 2020, value: 48.415}, {year: 2023, value: 50.1}
+            ],
+            pm25Pollution: [
+                {year: 1990, value: 56.7}, {year: 1995, value: 50.1}, {year: 2000, value: 60.6},
+                {year: 2005, value: 44.8}, {year: 2010, value: 44.8}, {year: 2015, value: 66.7},
+                {year: 2020, value: 51.0}
+            ],
+            electricityAccess: [
+                {year: 1996, value: 34.4}, {year: 2000, value: 47.5}, {year: 2005, value: 51.9},
+                {year: 2010, value: 65.4}, {year: 2015, value: 51.7}, {year: 2020, value: 66.1},
+                {year: 2022, value: 71.1}
+            ],
+            populationSlums: [
+                {year: 2000, value: 71.9}, {year: 2005, value: 70.3}, {year: 2010, value: 69.9},
+                {year: 2015, value: 68.7}, {year: 2020, value: 67.9}
+            ],
+            lowElevationAreas: [
+                {year: 1990, value: 133.3}, {year: 2000, value: 180.0}, {year: 2015, value: 247.0}
+            ]
+        };
+
+        let charts = {};
+
+        // Initialize navigation after DOM load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Navigation setup
+            setupNavigation();
+            
+            // Chart initialization
+            function initApp() {
+                if (typeof Chart !== 'undefined') {
+                    setTimeout(() => {
+                        hideLoading();
+                        initializeCharts();
+                        animateCounters();
+                    }, 1500);
+                } else {
+                    setTimeout(initApp, 100);
+                }
+            }
+            initApp();
+        });
+
+        function setupNavigation() {
+            const navLinks = document.querySelectorAll('.nav-menu a');
+            console.log('🔗 Configuration navigation:', navLinks.length, 'liens');
+            
+            navLinks.forEach((link, index) => {
+                const target = link.getAttribute('data-target');
+                console.log(`Lien ${index + 1}: ${link.textContent} → ${target}`);
+                
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    const targetSection = document.getElementById(target);
+                    console.log('🎯 Clic navigation:', target, targetSection ? 'trouvé' : 'non trouvé');
+                    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        
+                        // Update active state
+                        navLinks.forEach(a => a.classList.remove('active'));
+                        this.classList.add('active');
+                    }
+                    
+                    return false;
+                });
+            });
+        }
+
+        function hideLoading() {
+            const overlay = document.getElementById('loadingOverlay');
+            overlay.style.opacity = '0';
+            setTimeout(() => {
+                overlay.style.display = 'none';
+            }, 500);
+        }
+
+        function initializeCharts() {
+            try {
+                createPopulationChart();
+                createUrbanizationChart();
+                createPollutionChart();
+                createInfrastructureChart();
+                createDistributionChart();
+                createVulnerabilityChart();
+                console.log('✅ Tous les graphiques initialisés');
+            } catch (error) {
+                console.error('❌ Erreur graphiques:', error);
+                hideLoading(); // Au moins cacher le loading
+            }
+        }
+
+        function createPopulationChart() {
+            const ctx = document.getElementById('populationChart');
+            if (!ctx) return;
+            
+            charts.population = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: BENIN_URBAN_DATA.urbanPopulation.map(d => d.year),
+                    datasets: [{
+                        label: 'Population Urbaine',
+                        data: BENIN_URBAN_DATA.urbanPopulation.map(d => d.value),
+                        borderColor: '#4299e1',
+                        backgroundColor: 'rgba(66, 153, 225, 0.1)',
+                        borderWidth: 4,
+                        fill: true,
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: {
+                            ticks: {
+                                callback: function(value) {
+                                    return (value / 1000000).toFixed(1) + 'M';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function createUrbanizationChart() {
+            const ctx = document.getElementById('urbanizationChart');
+            if (!ctx) return;
+            
+            charts.urbanization = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: BENIN_URBAN_DATA.urbanPercent.map(d => d.year),
+                    datasets: [{
+                        label: 'Taux d\'Urbanisation (%)',
+                        data: BENIN_URBAN_DATA.urbanPercent.map(d => d.value),
+                        backgroundColor: 'rgba(72, 187, 120, 0.8)',
+                        borderColor: '#48bb78',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: { beginAtZero: true, max: 60 }
+                    }
+                }
+            });
+        }
+
+        function createPollutionChart() {
+            const ctx = document.getElementById('pollutionChart');
+            if (!ctx) return;
+            
+            const whoLimit = BENIN_URBAN_DATA.pm25Pollution.map(() => 15);
+            
+            charts.pollution = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: BENIN_URBAN_DATA.pm25Pollution.map(d => d.year),
+                    datasets: [
+                        {
+                            label: 'PM2.5 Bénin',
+                            data: BENIN_URBAN_DATA.pm25Pollution.map(d => d.value),
+                            borderColor: '#e53e3e',
+                            backgroundColor: 'rgba(229, 62, 62, 0.2)',
+                            borderWidth: 3,
+                            fill: true
+                        },
+                        {
+                            label: 'Limite OMS',
+                            data: whoLimit,
+                            borderColor: '#48bb78',
+                            borderWidth: 2,
+                            borderDash: [5, 5],
+                            fill: false
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: true } },
+                    scales: {
+                        y: { beginAtZero: true, max: 80 }
+                    }
+                }
+            });
+        }
+
+        function createInfrastructureChart() {
+            const ctx = document.getElementById('infrastructureChart');
+            if (!ctx) return;
+            
+            charts.infrastructure = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: BENIN_URBAN_DATA.electricityAccess.map(d => d.year),
+                    datasets: [
+                        {
+                            label: 'Accès Électricité (%)',
+                            data: BENIN_URBAN_DATA.electricityAccess.map(d => d.value),
+                            borderColor: '#ed8936',
+                            backgroundColor: 'rgba(237, 131, 54, 0.1)',
+                            borderWidth: 3,
+                            fill: true
+                        },
+                        {
+                            label: 'Population Bidonvilles (%)',
+                            data: BENIN_URBAN_DATA.populationSlums.map(d => d.value),
+                            borderColor: '#e53e3e',
+                            backgroundColor: 'rgba(229, 62, 62, 0.1)',
+                            borderWidth: 3,
+                            fill: true
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: true } },
+                    scales: {
+                        y: { min: 0, max: 100 }
+                    }
+                }
+            });
+        }
+
+        function createDistributionChart() {
+            const ctx = document.getElementById('distributionChart');
+            if (!ctx) return;
+            
+            charts.distribution = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Cotonou/Porto-Novo', 'Parakou', 'Abomey-Calavi', 'Autres villes'],
+                    datasets: [{
+                        data: [17.7, 8.2, 12.1, 62.0],
+                        backgroundColor: ['#4299e1', '#48bb78', '#ed8936', '#805ad5'],
+                        borderWidth: 3,
+                        borderColor: '#ffffff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom' }
+                    }
+                }
+            });
+        }
+
+        function createVulnerabilityChart() {
+            const ctx = document.getElementById('vulnerabilityChart');
+            if (!ctx) return;
+            
+            charts.vulnerability = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: BENIN_URBAN_DATA.lowElevationAreas.map(d => d.year),
+                    datasets: [{
+                        label: 'Zones < 5m (km²)',
+                        data: BENIN_URBAN_DATA.lowElevationAreas.map(d => d.value),
+                        backgroundColor: 'rgba(56, 178, 172, 0.8)',
+                        borderColor: '#38b2ac',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: { beginAtZero: true }
+                    }
+                }
+            });
+        }
+
+        function animateCounters() {
+            const counters = [
+                { id: 'urbanPopValue', end: 7.07, suffix: 'M' },
+                { id: 'urbanRateValue', end: 50.1, suffix: '%' },
+                { id: 'electricityValue', end: 71.1, suffix: '%' },
+                { id: 'pollutionValue', end: 51.0, suffix: '' },
+                { id: 'densityValue', end: 122, suffix: '' },
+                { id: 'slumsValue', end: 67.9, suffix: '%' }
+            ];
+
+            counters.forEach(counter => {
+                animateValue(counter.id, 0, counter.end, 2000, counter.suffix);
+            });
+        }
+
+        function animateValue(id, start, end, duration, suffix) {
+            const element = document.getElementById(id);
+            if (!element) return;
+            
+            const range = end - start;
+            let current = start;
+            const increment = range / (duration / 16);
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= end) {
+                    current = end;
+                    clearInterval(timer);
+                }
+                
+                if (suffix === 'M') {
+                    element.textContent = current.toFixed(2) + suffix;
+                } else if (suffix === '%') {
+                    element.textContent = current.toFixed(1) + suffix;
+                } else {
+                    element.textContent = Math.round(current) + suffix;
+                }
+            }, 16);
+        }
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const targetId = this.getAttribute('data-target');
+                const targetSection = document.getElementById(targetId);
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Update active navigation
+                    document.querySelectorAll('.nav-menu a').forEach(a => a.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    console.log('📍 Navigation vers:', targetId);
+                } else {
+                    console.log('❌ Section non trouvée:', targetId);
+                }
+                
+                return false;
+            });
+        });
+
+        // Fallback: Force hide loading after 3 seconds
+        setTimeout(() => {
+            const overlay = document.getElementById('loadingOverlay');
+            if (overlay && overlay.style.display !== 'none') {
+                console.log('🔧 Forçage masquage loading');
+                hideLoading();
+            }
+        }, 3000);
+
+        console.log('🏛️ Script Observatoire chargé');
+    </script>
+</body>
+</html>

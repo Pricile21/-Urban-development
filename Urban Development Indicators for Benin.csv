@@ -1,0 +1,498 @@
+Country Name,Country ISO3,Year,Indicator Name,Indicator Code,Value
+#country+name,#country+code,#date+year,#indicator+name,#indicator+code,#indicator+value+num
+Benin,BEN,2015,Urban land area where elevation is below 5 meters (sq. km),AG.LND.EL5M.UR.K2,247.000451546
+Benin,BEN,2000,Urban land area where elevation is below 5 meters (sq. km),AG.LND.EL5M.UR.K2,179.9525318152
+Benin,BEN,1990,Urban land area where elevation is below 5 meters (sq. km),AG.LND.EL5M.UR.K2,133.3081267786
+Benin,BEN,2015,Urban land area where elevation is below 5 meters (% of total land area),AG.LND.EL5M.UR.ZS,0.213489121239495
+Benin,BEN,2000,Urban land area where elevation is below 5 meters (% of total land area),AG.LND.EL5M.UR.ZS,0.155537804248491
+Benin,BEN,1990,Urban land area where elevation is below 5 meters (% of total land area),AG.LND.EL5M.UR.ZS,0.115221792761546
+Benin,BEN,2015,Urban land area (sq. km),AG.LND.TOTL.UR.K2,2005.9093441513
+Benin,BEN,2000,Urban land area (sq. km),AG.LND.TOTL.UR.K2,1413.5481945591
+Benin,BEN,1990,Urban land area (sq. km),AG.LND.TOTL.UR.K2,1014.6356801175
+Benin,BEN,2022,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,71.1
+Benin,BEN,2021,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,67
+Benin,BEN,2020,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,66.1
+Benin,BEN,2019,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,65.2
+Benin,BEN,2018,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,64.3
+Benin,BEN,2017,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,54.2
+Benin,BEN,2016,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,62.5
+Benin,BEN,2015,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,51.7
+Benin,BEN,2014,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,55.8
+Benin,BEN,2013,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,61
+Benin,BEN,2012,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,68.6
+Benin,BEN,2011,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,67
+Benin,BEN,2010,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,65.4
+Benin,BEN,2009,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,55.7
+Benin,BEN,2008,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,54.7
+Benin,BEN,2007,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,53.8
+Benin,BEN,2006,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,56.6
+Benin,BEN,2005,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,51.9
+Benin,BEN,2004,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,51
+Benin,BEN,2003,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,50.1
+Benin,BEN,2002,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,49.2
+Benin,BEN,2001,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,49.6
+Benin,BEN,2000,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,47.5
+Benin,BEN,1999,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,46.6010475158691
+Benin,BEN,1998,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,45.7014350891113
+Benin,BEN,1997,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,44.7813873291016
+Benin,BEN,1996,"Access to electricity, urban (% of urban population)",EG.ELC.ACCS.UR.ZS,34.4
+Benin,BEN,2020,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,51.0478241974862
+Benin,BEN,2019,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,46.5625275293874
+Benin,BEN,2018,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,54.0562679352757
+Benin,BEN,2017,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,58.3879587239383
+Benin,BEN,2016,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,59.4793406242621
+Benin,BEN,2015,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,66.6561284323416
+Benin,BEN,2014,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,42.0112596872744
+Benin,BEN,2013,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,42.0881252510416
+Benin,BEN,2012,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,51.5628188212507
+Benin,BEN,2011,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,47.392759069621
+Benin,BEN,2010,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,44.8496835809048
+Benin,BEN,2009,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,44.7544581747048
+Benin,BEN,2008,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,44.6992177546544
+Benin,BEN,2007,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,44.6821454651912
+Benin,BEN,2006,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,44.7014244507525
+Benin,BEN,2005,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,44.7552378557758
+Benin,BEN,2004,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,46.4477544416886
+Benin,BEN,2003,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,50.38184649863
+Benin,BEN,2002,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,55.0537524641043
+Benin,BEN,2001,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,58.959710775616
+Benin,BEN,2000,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,60.5959598706697
+Benin,BEN,1999,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,59.5072366008039
+Benin,BEN,1998,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,56.9108545183965
+Benin,BEN,1997,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,53.8119171122103
+Benin,BEN,1996,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,51.2155278710086
+Benin,BEN,1995,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,50.1267902835542
+Benin,BEN,1994,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,50.3303080274145
+Benin,BEN,1993,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,51.0021127590457
+Benin,BEN,1992,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,52.2344499355444
+Benin,BEN,1991,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,54.119565014007
+Benin,BEN,1990,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",EN.ATM.PM25.MC.M3,56.74970345153
+Benin,BEN,2017,"PM2.5 air pollution, population exposed to levels exceeding WHO guideline value (% of total)",EN.ATM.PM25.MC.ZS,100
+Benin,BEN,2016,"PM2.5 air pollution, population exposed to levels exceeding WHO guideline value (% of total)",EN.ATM.PM25.MC.ZS,100
+Benin,BEN,2015,"PM2.5 air pollution, population exposed to levels exceeding WHO guideline value (% of total)",EN.ATM.PM25.MC.ZS,100
+Benin,BEN,2014,"PM2.5 air pollution, population exposed to levels exceeding WHO guideline value (% of total)",EN.ATM.PM25.MC.ZS,100
+Benin,BEN,2013,"PM2.5 air pollution, population exposed to levels exceeding WHO guideline value (% of total)",EN.ATM.PM25.MC.ZS,100
+Benin,BEN,2012,"PM2.5 air pollution, population exposed to levels exceeding WHO guideline value (% of total)",EN.ATM.PM25.MC.ZS,100
+Benin,BEN,2011,"PM2.5 air pollution, population exposed to levels exceeding WHO guideline value (% of total)",EN.ATM.PM25.MC.ZS,100
+Benin,BEN,2010,"PM2.5 air pollution, population exposed to levels exceeding WHO guideline value (% of total)",EN.ATM.PM25.MC.ZS,100
+Benin,BEN,2005,"PM2.5 air pollution, population exposed to levels exceeding WHO guideline value (% of total)",EN.ATM.PM25.MC.ZS,100
+Benin,BEN,2000,"PM2.5 air pollution, population exposed to levels exceeding WHO guideline value (% of total)",EN.ATM.PM25.MC.ZS,100
+Benin,BEN,1995,"PM2.5 air pollution, population exposed to levels exceeding WHO guideline value (% of total)",EN.ATM.PM25.MC.ZS,100
+Benin,BEN,1990,"PM2.5 air pollution, population exposed to levels exceeding WHO guideline value (% of total)",EN.ATM.PM25.MC.ZS,100
+Benin,BEN,2022,Population density (people per sq. km of land area),EN.POP.DNST,122.024663001064
+Benin,BEN,2021,Population density (people per sq. km of land area),EN.POP.DNST,118.955454061724
+Benin,BEN,2020,Population density (people per sq. km of land area),EN.POP.DNST,115.911395885066
+Benin,BEN,2019,Population density (people per sq. km of land area),EN.POP.DNST,112.865865555161
+Benin,BEN,2018,Population density (people per sq. km of land area),EN.POP.DNST,109.820388435615
+Benin,BEN,2017,Population density (people per sq. km of land area),EN.POP.DNST,106.773501241575
+Benin,BEN,2016,Population density (people per sq. km of land area),EN.POP.DNST,103.741060659808
+Benin,BEN,2015,Population density (people per sq. km of land area),EN.POP.DNST,100.750984391628
+Benin,BEN,2014,Population density (people per sq. km of land area),EN.POP.DNST,97.8184107839659
+Benin,BEN,2013,Population density (people per sq. km of land area),EN.POP.DNST,94.9701489890032
+Benin,BEN,2012,Population density (people per sq. km of land area),EN.POP.DNST,92.2105090457609
+Benin,BEN,2011,Population density (people per sq. km of land area),EN.POP.DNST,89.5142160340546
+Benin,BEN,2010,Population density (people per sq. km of land area),EN.POP.DNST,86.8879389854558
+Benin,BEN,2009,Population density (people per sq. km of land area),EN.POP.DNST,84.3333008158922
+Benin,BEN,2008,Population density (people per sq. km of land area),EN.POP.DNST,81.8416637105357
+Benin,BEN,2007,Population density (people per sq. km of land area),EN.POP.DNST,79.4073164242639
+Benin,BEN,2006,Population density (people per sq. km of land area),EN.POP.DNST,77.0950869102519
+Benin,BEN,2005,Population density (people per sq. km of land area),EN.POP.DNST,74.7263568641362
+Benin,BEN,2004,Population density (people per sq. km of land area),EN.POP.DNST,72.3580525008868
+Benin,BEN,2003,Population density (people per sq. km of land area),EN.POP.DNST,70.1762149698475
+Benin,BEN,2002,Population density (people per sq. km of land area),EN.POP.DNST,68.0686945725434
+Benin,BEN,2001,Population density (people per sq. km of land area),EN.POP.DNST,66.0304717985101
+Benin,BEN,2000,Population density (people per sq. km of land area),EN.POP.DNST,64.0441557289819
+Benin,BEN,1999,Population density (people per sq. km of land area),EN.POP.DNST,62.1037424618659
+Benin,BEN,1998,Population density (people per sq. km of land area),EN.POP.DNST,60.2118570415041
+Benin,BEN,1997,Population density (people per sq. km of land area),EN.POP.DNST,58.3838683930472
+Benin,BEN,1996,Population density (people per sq. km of land area),EN.POP.DNST,56.6855090457609
+Benin,BEN,1995,Population density (people per sq. km of land area),EN.POP.DNST,55.2214703795672
+Benin,BEN,1994,Population density (people per sq. km of land area),EN.POP.DNST,54.0662114224902
+Benin,BEN,1993,Population density (people per sq. km of land area),EN.POP.DNST,52.0814650585314
+Benin,BEN,1992,Population density (people per sq. km of land area),EN.POP.DNST,49.821248669741
+Benin,BEN,1991,Population density (people per sq. km of land area),EN.POP.DNST,48.3055338772614
+Benin,BEN,1990,Population density (people per sq. km of land area),EN.POP.DNST,46.8382316424264
+Benin,BEN,1989,Population density (people per sq. km of land area),EN.POP.DNST,45.42086732884
+Benin,BEN,1988,Population density (people per sq. km of land area),EN.POP.DNST,44.0523323873714
+Benin,BEN,1987,Population density (people per sq. km of land area),EN.POP.DNST,42.7322277403334
+Benin,BEN,1986,Population density (people per sq. km of land area),EN.POP.DNST,41.4634622206456
+Benin,BEN,1985,Population density (people per sq. km of land area),EN.POP.DNST,40.2448740688187
+Benin,BEN,1984,Population density (people per sq. km of land area),EN.POP.DNST,39.0732085846045
+Benin,BEN,1983,Population density (people per sq. km of land area),EN.POP.DNST,37.9476587442355
+Benin,BEN,1982,Population density (people per sq. km of land area),EN.POP.DNST,36.8623270663356
+Benin,BEN,1981,Population density (people per sq. km of land area),EN.POP.DNST,35.8132937211777
+Benin,BEN,1980,Population density (people per sq. km of land area),EN.POP.DNST,34.8106686768358
+Benin,BEN,1979,Population density (people per sq. km of land area),EN.POP.DNST,33.8642071656616
+Benin,BEN,1978,Population density (people per sq. km of land area),EN.POP.DNST,32.9753902092941
+Benin,BEN,1977,Population density (people per sq. km of land area),EN.POP.DNST,32.1319794253281
+Benin,BEN,1976,Population density (people per sq. km of land area),EN.POP.DNST,31.3249024476765
+Benin,BEN,1975,Population density (people per sq. km of land area),EN.POP.DNST,30.5552234835048
+Benin,BEN,1974,Population density (people per sq. km of land area),EN.POP.DNST,29.8211511174175
+Benin,BEN,1973,Population density (people per sq. km of land area),EN.POP.DNST,29.1193330968429
+Benin,BEN,1972,Population density (people per sq. km of land area),EN.POP.DNST,28.4457520397304
+Benin,BEN,1971,Population density (people per sq. km of land area),EN.POP.DNST,27.8003458673288
+Benin,BEN,1970,Population density (people per sq. km of land area),EN.POP.DNST,27.1821301880099
+Benin,BEN,1969,Population density (people per sq. km of land area),EN.POP.DNST,26.5894111387017
+Benin,BEN,1968,Population density (people per sq. km of land area),EN.POP.DNST,26.0221443774388
+Benin,BEN,1967,Population density (people per sq. km of land area),EN.POP.DNST,25.4788666193686
+Benin,BEN,1966,Population density (people per sq. km of land area),EN.POP.DNST,24.9584693153601
+Benin,BEN,1965,Population density (people per sq. km of land area),EN.POP.DNST,24.458460446967
+Benin,BEN,1964,Population density (people per sq. km of land area),EN.POP.DNST,23.9801614047535
+Benin,BEN,1963,Population density (people per sq. km of land area),EN.POP.DNST,23.5270308620078
+Benin,BEN,1962,Population density (people per sq. km of land area),EN.POP.DNST,23.0991397658744
+Benin,BEN,1961,Population density (people per sq. km of land area),EN.POP.DNST,22.6961954593828
+Benin,BEN,2015,Urban population living in areas where elevation is below 5 meters (% of total population),EN.POP.EL5M.UR.ZS,6.00319532160345
+Benin,BEN,2000,Urban population living in areas where elevation is below 5 meters (% of total population),EN.POP.EL5M.UR.ZS,6.32537343293353
+Benin,BEN,1990,Urban population living in areas where elevation is below 5 meters (% of total population),EN.POP.EL5M.UR.ZS,6.73388074841247
+Benin,BEN,2020,Population living in slums (% of urban population),EN.POP.SLUM.UR.ZS,67.93293
+Benin,BEN,2018,Population living in slums (% of urban population),EN.POP.SLUM.UR.ZS,68.3262
+Benin,BEN,2016,Population living in slums (% of urban population),EN.POP.SLUM.UR.ZS,68.71948
+Benin,BEN,2014,Population living in slums (% of urban population),EN.POP.SLUM.UR.ZS,69.11276
+Benin,BEN,2012,Population living in slums (% of urban population),EN.POP.SLUM.UR.ZS,69.50603
+Benin,BEN,2010,Population living in slums (% of urban population),EN.POP.SLUM.UR.ZS,69.89931
+Benin,BEN,2008,Population living in slums (% of urban population),EN.POP.SLUM.UR.ZS,70.29258
+Benin,BEN,2006,Population living in slums (% of urban population),EN.POP.SLUM.UR.ZS,70.68586
+Benin,BEN,2004,Population living in slums (% of urban population),EN.POP.SLUM.UR.ZS,71.07914
+Benin,BEN,2002,Population living in slums (% of urban population),EN.POP.SLUM.UR.ZS,71.47241
+Benin,BEN,2000,Population living in slums (% of urban population),EN.POP.SLUM.UR.ZS,71.86569
+Benin,BEN,2023,Population in largest city,EN.URB.LCTY,1252890
+Benin,BEN,2022,Population in largest city,EN.URB.LCTY,1188736
+Benin,BEN,2021,Population in largest city,EN.URB.LCTY,1122713
+Benin,BEN,2020,Population in largest city,EN.URB.LCTY,1056440
+Benin,BEN,2019,Population in largest city,EN.URB.LCTY,991000
+Benin,BEN,2018,Population in largest city,EN.URB.LCTY,927545
+Benin,BEN,2017,Population in largest city,EN.URB.LCTY,867158
+Benin,BEN,2016,Population in largest city,EN.URB.LCTY,810702
+Benin,BEN,2015,Population in largest city,EN.URB.LCTY,757922
+Benin,BEN,2014,Population in largest city,EN.URB.LCTY,708578
+Benin,BEN,2013,Population in largest city,EN.URB.LCTY,679183
+Benin,BEN,2012,Population in largest city,EN.URB.LCTY,677935
+Benin,BEN,2011,Population in largest city,EN.URB.LCTY,676685
+Benin,BEN,2010,Population in largest city,EN.URB.LCTY,675440
+Benin,BEN,2009,Population in largest city,EN.URB.LCTY,674196
+Benin,BEN,2008,Population in largest city,EN.URB.LCTY,672957
+Benin,BEN,2007,Population in largest city,EN.URB.LCTY,671716
+Benin,BEN,2006,Population in largest city,EN.URB.LCTY,670480
+Benin,BEN,2005,Population in largest city,EN.URB.LCTY,669246
+Benin,BEN,2004,Population in largest city,EN.URB.LCTY,668016
+Benin,BEN,2003,Population in largest city,EN.URB.LCTY,666784
+Benin,BEN,2002,Population in largest city,EN.URB.LCTY,665557
+Benin,BEN,2001,Population in largest city,EN.URB.LCTY,656253
+Benin,BEN,2000,Population in largest city,EN.URB.LCTY,642413
+Benin,BEN,1999,Population in largest city,EN.URB.LCTY,628829
+Benin,BEN,1998,Population in largest city,EN.URB.LCTY,615549
+Benin,BEN,1997,Population in largest city,EN.URB.LCTY,602550
+Benin,BEN,1996,Population in largest city,EN.URB.LCTY,589843
+Benin,BEN,1995,Population in largest city,EN.URB.LCTY,577370
+Benin,BEN,1994,Population in largest city,EN.URB.LCTY,565177
+Benin,BEN,1993,Population in largest city,EN.URB.LCTY,553242
+Benin,BEN,1992,Population in largest city,EN.URB.LCTY,541575
+Benin,BEN,1991,Population in largest city,EN.URB.LCTY,524284
+Benin,BEN,1990,Population in largest city,EN.URB.LCTY,503649
+Benin,BEN,1989,Population in largest city,EN.URB.LCTY,483826
+Benin,BEN,1988,Population in largest city,EN.URB.LCTY,464809
+Benin,BEN,1987,Population in largest city,EN.URB.LCTY,446491
+Benin,BEN,1986,Population in largest city,EN.URB.LCTY,428918
+Benin,BEN,1985,Population in largest city,EN.URB.LCTY,412036
+Benin,BEN,1984,Population in largest city,EN.URB.LCTY,395841
+Benin,BEN,1983,Population in largest city,EN.URB.LCTY,380240
+Benin,BEN,1982,Population in largest city,EN.URB.LCTY,365275
+Benin,BEN,1981,Population in largest city,EN.URB.LCTY,350898
+Benin,BEN,1980,Population in largest city,EN.URB.LCTY,337106
+Benin,BEN,1979,Population in largest city,EN.URB.LCTY,323820
+Benin,BEN,1978,Population in largest city,EN.URB.LCTY,302776
+Benin,BEN,1977,Population in largest city,EN.URB.LCTY,280304
+Benin,BEN,1976,Population in largest city,EN.URB.LCTY,259527
+Benin,BEN,1975,Population in largest city,EN.URB.LCTY,240239
+Benin,BEN,1974,Population in largest city,EN.URB.LCTY,222408
+Benin,BEN,1973,Population in largest city,EN.URB.LCTY,205900
+Benin,BEN,1972,Population in largest city,EN.URB.LCTY,190638
+Benin,BEN,1971,Population in largest city,EN.URB.LCTY,176470
+Benin,BEN,1970,Population in largest city,EN.URB.LCTY,163372
+Benin,BEN,1969,Population in largest city,EN.URB.LCTY,151247
+Benin,BEN,1968,Population in largest city,EN.URB.LCTY,140036
+Benin,BEN,1967,Population in largest city,EN.URB.LCTY,129628
+Benin,BEN,1966,Population in largest city,EN.URB.LCTY,120007
+Benin,BEN,1965,Population in largest city,EN.URB.LCTY,111100
+Benin,BEN,1964,Population in largest city,EN.URB.LCTY,101640
+Benin,BEN,1963,Population in largest city,EN.URB.LCTY,92962
+Benin,BEN,1962,Population in largest city,EN.URB.LCTY,85036
+Benin,BEN,1961,Population in largest city,EN.URB.LCTY,77928
+Benin,BEN,1960,Population in largest city,EN.URB.LCTY,73080
+Benin,BEN,2023,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,17.7221488881735
+Benin,BEN,2022,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,17.4413198132352
+Benin,BEN,2021,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,17.0915502467034
+Benin,BEN,2020,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,16.6948960496036
+Benin,BEN,2019,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,16.2695004163416
+Benin,BEN,2018,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,15.8316306266342
+Benin,BEN,2017,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,15.4003613008821
+Benin,BEN,2016,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,14.991359694663
+Benin,BEN,2015,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,14.5999538070023
+Benin,BEN,2014,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,14.2232986712465
+Benin,BEN,2013,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,14.2069531305236
+Benin,BEN,2012,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,14.7763736697264
+Benin,BEN,2011,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,15.3735198370966
+Benin,BEN,2010,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,15.9979914875072
+Benin,BEN,2009,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,16.650465583565
+Benin,BEN,2008,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,17.3338745900328
+Benin,BEN,2007,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,18.0515924097509
+Benin,BEN,2006,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,18.7889047717395
+Benin,BEN,2005,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,19.5902947475157
+Benin,BEN,2004,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,20.4485095597554
+Benin,BEN,2003,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,21.3131422584098
+Benin,BEN,2002,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,22.2135259608989
+Benin,BEN,2001,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,22.8045923808511
+Benin,BEN,2000,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,23.2063571994424
+Benin,BEN,1999,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,23.6213530489411
+Benin,BEN,1998,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,24.0489316756063
+Benin,BEN,1997,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,24.482049544306
+Benin,BEN,1996,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,24.8928688691325
+Benin,BEN,1995,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,25.2254747716854
+Benin,BEN,1994,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,25.4355772337819
+Benin,BEN,1993,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,26.0697468288221
+Benin,BEN,1992,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,26.9078180856112
+Benin,BEN,1991,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,27.3081650936517
+Benin,BEN,1990,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,27.6529963466017
+Benin,BEN,1989,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,28.0067263470784
+Benin,BEN,1988,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,28.3683567117512
+Benin,BEN,1987,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,28.7359961487197
+Benin,BEN,1986,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,29.1077613820211
+Benin,BEN,1985,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,29.4832439611141
+Benin,BEN,1984,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,29.8622165156108
+Benin,BEN,1983,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,30.2417414611062
+Benin,BEN,1982,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,30.6281763290796
+Benin,BEN,1981,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,31.0218984555268
+Benin,BEN,1980,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,31.4135179159165
+Benin,BEN,1979,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,31.7897256219377
+Benin,BEN,1978,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,31.8677698476267
+Benin,BEN,1977,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,31.8460685493033
+Benin,BEN,1976,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,31.8361473805073
+Benin,BEN,1975,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,31.8331429661765
+Benin,BEN,1974,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,31.8368363568174
+Benin,BEN,1973,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,31.8490057046689
+Benin,BEN,1972,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,31.8716427342625
+Benin,BEN,1971,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,31.9003167074
+Benin,BEN,1970,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,31.9342284529183
+Benin,BEN,1969,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,31.9761099365751
+Benin,BEN,1968,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,32.0234534361479
+Benin,BEN,1967,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,32.0701035620803
+Benin,BEN,1966,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,32.1217020297055
+Benin,BEN,1965,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,32.1780887779277
+Benin,BEN,1964,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,31.852183805026
+Benin,BEN,1963,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,31.5178843871843
+Benin,BEN,1962,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,31.1820701996274
+Benin,BEN,1961,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,30.8947537435031
+Benin,BEN,1960,Population in the largest city (% of urban population),EN.URB.LCTY.UR.ZS,31.3005936319482
+Benin,BEN,2019,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,26.8
+Benin,BEN,2018,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,26.9
+Benin,BEN,2017,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,27
+Benin,BEN,2016,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,27.5
+Benin,BEN,2015,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,27.3
+Benin,BEN,2014,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,27
+Benin,BEN,2013,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,27
+Benin,BEN,2012,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,27.4
+Benin,BEN,2011,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,28.1
+Benin,BEN,2010,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,28.2
+Benin,BEN,2009,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,27.9
+Benin,BEN,2008,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,27.6
+Benin,BEN,2007,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,27.6
+Benin,BEN,2006,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,28.1
+Benin,BEN,2005,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,28.9
+Benin,BEN,2004,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,28
+Benin,BEN,2003,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,28.2
+Benin,BEN,2002,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,28.7
+Benin,BEN,2001,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,28.5
+Benin,BEN,2000,"Mortality caused by road traffic injury (per 100,000 population)",SH.STA.TRAF.P5,28.4
+Benin,BEN,2023,Urban population growth (annual %),SP.URB.GROW,3.65892110963411
+Benin,BEN,2022,Urban population growth (annual %),SP.URB.GROW,3.68845908680019
+Benin,BEN,2021,Urban population growth (annual %),SP.URB.GROW,3.7362155649612
+Benin,BEN,2020,Urban population growth (annual %),SP.URB.GROW,3.81346778255785
+Benin,BEN,2019,Urban population growth (annual %),SP.URB.GROW,3.88908857828179
+Benin,BEN,2018,Urban population growth (annual %),SP.URB.GROW,3.97012060680336
+Benin,BEN,2017,Urban population growth (annual %),SP.URB.GROW,4.04037033261009
+Benin,BEN,2016,Urban population growth (annual %),SP.URB.GROW,4.0864411043936
+Benin,BEN,2015,Urban population growth (annual %),SP.URB.GROW,4.1183339894595
+Benin,BEN,2014,Urban population growth (annual %),SP.URB.GROW,4.12196698789072
+Benin,BEN,2013,Urban population growth (annual %),SP.URB.GROW,4.11372217967873
+Benin,BEN,2012,Urban population growth (annual %),SP.URB.GROW,4.14625433008207
+Benin,BEN,2011,Urban population growth (annual %),SP.URB.GROW,4.1658190264379
+Benin,BEN,2010,Urban population growth (annual %),SP.URB.GROW,4.18184572196597
+Benin,BEN,2009,Urban population growth (annual %),SP.URB.GROW,4.20639119991042
+Benin,BEN,2008,Urban population growth (annual %),SP.URB.GROW,4.24170497007823
+Benin,BEN,2007,Urban population growth (annual %),SP.URB.GROW,4.18743792219152
+Benin,BEN,2006,Urban population growth (annual %),SP.URB.GROW,4.36099220060055
+Benin,BEN,2005,Urban population growth (annual %),SP.URB.GROW,4.47153002082188
+Benin,BEN,2004,Urban population growth (annual %),SP.URB.GROW,4.32598621702265
+Benin,BEN,2003,Urban population growth (annual %),SP.URB.GROW,4.32193623134401
+Benin,BEN,2002,Urban population growth (annual %),SP.URB.GROW,4.03384537595953
+Benin,BEN,2001,Urban population growth (annual %),SP.URB.GROW,3.87793087463716
+Benin,BEN,2000,Urban population growth (annual %),SP.URB.GROW,3.90968742073553
+Benin,BEN,1999,Urban population growth (annual %),SP.URB.GROW,3.92842885429072
+Benin,BEN,1998,Urban population growth (annual %),SP.URB.GROW,3.91935058177318
+Benin,BEN,1997,Urban population growth (annual %),SP.URB.GROW,3.79554439803359
+Benin,BEN,1996,Urban population growth (annual %),SP.URB.GROW,3.46461068449356
+Benin,BEN,1995,Urban population growth (annual %),SP.URB.GROW,2.96388373556716
+Benin,BEN,1994,Urban population growth (annual %),SP.URB.GROW,4.59700818110564
+Benin,BEN,1993,Urban population growth (annual %),SP.URB.GROW,5.29553206558097
+Benin,BEN,1992,Urban population growth (annual %),SP.URB.GROW,4.72169043904156
+Benin,BEN,1991,Urban population growth (annual %),SP.URB.GROW,5.27022692623916
+Benin,BEN,1990,Urban population growth (annual %),SP.URB.GROW,5.28648778776047
+Benin,BEN,1989,Urban population growth (annual %),SP.URB.GROW,5.2928385117451
+Benin,BEN,1988,Urban population growth (annual %),SP.URB.GROW,5.30835595815348
+Benin,BEN,1987,Urban population growth (annual %),SP.URB.GROW,5.30077795490197
+Benin,BEN,1986,Urban population growth (annual %),SP.URB.GROW,5.29722821732664
+Benin,BEN,1985,Urban population growth (annual %),SP.URB.GROW,5.28700276627824
+Benin,BEN,1984,Urban population growth (annual %),SP.URB.GROW,5.28391012034765
+Benin,BEN,1983,Urban population growth (annual %),SP.URB.GROW,5.28493804494294
+Benin,BEN,1982,Urban population growth (annual %),SP.URB.GROW,5.29278881521945
+Benin,BEN,1981,Urban population growth (annual %),SP.URB.GROW,5.26431122460556
+Benin,BEN,1980,Urban population growth (annual %),SP.URB.GROW,5.21144518770904
+Benin,BEN,1979,Urban population growth (annual %),SP.URB.GROW,6.96465531833865
+Benin,BEN,1978,Urban population growth (annual %),SP.URB.GROW,7.64373182080517
+Benin,BEN,1977,Urban population growth (annual %),SP.URB.GROW,7.67024013997531
+Benin,BEN,1976,Urban population growth (annual %),SP.URB.GROW,7.71321066553752
+Benin,BEN,1975,Urban population growth (annual %),SP.URB.GROW,7.72367449160316
+Benin,BEN,1974,Urban population growth (annual %),SP.URB.GROW,7.75050869989986
+Benin,BEN,1973,Urban population growth (annual %),SP.URB.GROW,7.77247807564376
+Benin,BEN,1972,Urban population growth (annual %),SP.URB.GROW,7.81247174282317
+Benin,BEN,1971,Urban population growth (annual %),SP.URB.GROW,7.81835700693147
+Benin,BEN,1970,Urban population growth (annual %),SP.URB.GROW,7.84261798088099
+Benin,BEN,1969,Urban population growth (annual %),SP.URB.GROW,7.84942243176893
+Benin,BEN,1968,Urban population growth (annual %),SP.URB.GROW,7.86864111714426
+Benin,BEN,1967,Urban population growth (annual %),SP.URB.GROW,7.87263699921669
+Benin,BEN,1966,Urban population growth (annual %),SP.URB.GROW,7.88732485655033
+Benin,BEN,1965,Urban population growth (annual %),SP.URB.GROW,7.88137349796951
+Benin,BEN,1964,Urban population growth (annual %),SP.URB.GROW,7.86955490163518
+Benin,BEN,1963,Urban population growth (annual %),SP.URB.GROW,7.84042247608814
+Benin,BEN,1962,Urban population growth (annual %),SP.URB.GROW,7.80325039569491
+Benin,BEN,1961,Urban population growth (annual %),SP.URB.GROW,7.72812674765532
+Benin,BEN,2023,Urban population,SP.URB.TOTL,7069628
+Benin,BEN,2022,Urban population,SP.URB.TOTL,6815631
+Benin,BEN,2021,Urban population,SP.URB.TOTL,6568819
+Benin,BEN,2020,Urban population,SP.URB.TOTL,6327922
+Benin,BEN,2019,Urban population,SP.URB.TOTL,6091152
+Benin,BEN,2018,Urban population,SP.URB.TOTL,5858809
+Benin,BEN,2017,Urban population,SP.URB.TOTL,5630764
+Benin,BEN,2016,Urban population,SP.URB.TOTL,5407795
+Benin,BEN,2015,Urban population,SP.URB.TOTL,5191263
+Benin,BEN,2014,Urban population,SP.URB.TOTL,4981812
+Benin,BEN,2013,Urban population,SP.URB.TOTL,4780638
+Benin,BEN,2012,Urban population,SP.URB.TOTL,4587966
+Benin,BEN,2011,Urban population,SP.URB.TOTL,4401627
+Benin,BEN,2010,Urban population,SP.URB.TOTL,4222030
+Benin,BEN,2009,Urban population,SP.URB.TOTL,4049112
+Benin,BEN,2008,Urban population,SP.URB.TOTL,3882323
+Benin,BEN,2007,Urban population,SP.URB.TOTL,3721090
+Benin,BEN,2006,Urban population,SP.URB.TOTL,3568489
+Benin,BEN,2005,Urban population,SP.URB.TOTL,3416212
+Benin,BEN,2004,Urban population,SP.URB.TOTL,3266820
+Benin,BEN,2003,Urban population,SP.URB.TOTL,3128511
+Benin,BEN,2002,Urban population,SP.URB.TOTL,2996179
+Benin,BEN,2001,Urban population,SP.URB.TOTL,2877723
+Benin,BEN,2000,Urban population,SP.URB.TOTL,2768263
+Benin,BEN,1999,Urban population,SP.URB.TOTL,2662121
+Benin,BEN,1998,Urban population,SP.URB.TOTL,2559569
+Benin,BEN,1997,Urban population,SP.URB.TOTL,2461191
+Benin,BEN,1996,Urban population,SP.URB.TOTL,2369526
+Benin,BEN,1995,Urban population,SP.URB.TOTL,2288837
+Benin,BEN,1994,Urban population,SP.URB.TOTL,2221994
+Benin,BEN,1993,Urban population,SP.URB.TOTL,2122161
+Benin,BEN,1992,Urban population,SP.URB.TOTL,2012705
+Benin,BEN,1991,Urban population,SP.URB.TOTL,1919880
+Benin,BEN,1990,Urban population,SP.URB.TOTL,1821318
+Benin,BEN,1989,Urban population,SP.URB.TOTL,1727535
+Benin,BEN,1988,Urban population,SP.URB.TOTL,1638477
+Benin,BEN,1987,Urban population,SP.URB.TOTL,1553769
+Benin,BEN,1986,Urban population,SP.URB.TOTL,1473552
+Benin,BEN,1985,Urban population,SP.URB.TOTL,1397526
+Benin,BEN,1984,Urban population,SP.URB.TOTL,1325558
+Benin,BEN,1983,Urban population,SP.URB.TOTL,1257335
+Benin,BEN,1982,Urban population,SP.URB.TOTL,1192611
+Benin,BEN,1981,Urban population,SP.URB.TOTL,1131130
+Benin,BEN,1980,Urban population,SP.URB.TOTL,1073124
+Benin,BEN,1979,Urban population,SP.URB.TOTL,1018631
+Benin,BEN,1978,Urban population,SP.URB.TOTL,950101
+Benin,BEN,1977,Urban population,SP.URB.TOTL,880184
+Benin,BEN,1976,Urban population,SP.URB.TOTL,815196
+Benin,BEN,1975,Urban population,SP.URB.TOTL,754682
+Benin,BEN,1974,Urban population,SP.URB.TOTL,698587
+Benin,BEN,1973,Urban population,SP.URB.TOTL,646488
+Benin,BEN,1972,Urban population,SP.URB.TOTL,598143
+Benin,BEN,1971,Urban population,SP.URB.TOTL,553192
+Benin,BEN,1970,Urban population,SP.URB.TOTL,511589
+Benin,BEN,1969,Urban population,SP.URB.TOTL,473000
+Benin,BEN,1968,Urban population,SP.URB.TOTL,437292
+Benin,BEN,1967,Urban population,SP.URB.TOTL,404202
+Benin,BEN,1966,Urban population,SP.URB.TOTL,373601
+Benin,BEN,1965,Urban population,SP.URB.TOTL,345266
+Benin,BEN,1964,Urban population,SP.URB.TOTL,319099
+Benin,BEN,1963,Urban population,SP.URB.TOTL,294950
+Benin,BEN,1962,Urban population,SP.URB.TOTL,272708
+Benin,BEN,1961,Urban population,SP.URB.TOTL,252237
+Benin,BEN,1960,Urban population,SP.URB.TOTL,233478
+Benin,BEN,2023,Urban population (% of total population),SP.URB.TOTL.IN.ZS,50.1
+Benin,BEN,2022,Urban population (% of total population),SP.URB.TOTL.IN.ZS,49.534
+Benin,BEN,2021,Urban population (% of total population),SP.URB.TOTL.IN.ZS,48.972
+Benin,BEN,2020,Urban population (% of total population),SP.URB.TOTL.IN.ZS,48.415
+Benin,BEN,2019,Urban population (% of total population),SP.URB.TOTL.IN.ZS,47.861
+Benin,BEN,2018,Urban population (% of total population),SP.URB.TOTL.IN.ZS,47.312
+Benin,BEN,2017,Urban population (% of total population),SP.URB.TOTL.IN.ZS,46.768
+Benin,BEN,2016,Urban population (% of total population),SP.URB.TOTL.IN.ZS,46.229
+Benin,BEN,2015,Urban population (% of total population),SP.URB.TOTL.IN.ZS,45.695
+Benin,BEN,2014,Urban population (% of total population),SP.URB.TOTL.IN.ZS,45.166
+Benin,BEN,2013,Urban population (% of total population),SP.URB.TOTL.IN.ZS,44.642
+Benin,BEN,2012,Urban population (% of total population),SP.URB.TOTL.IN.ZS,44.125
+Benin,BEN,2011,Urban population (% of total population),SP.URB.TOTL.IN.ZS,43.608
+Benin,BEN,2010,Urban population (% of total population),SP.URB.TOTL.IN.ZS,43.093
+Benin,BEN,2009,Urban population (% of total population),SP.URB.TOTL.IN.ZS,42.58
+Benin,BEN,2008,Urban population (% of total population),SP.URB.TOTL.IN.ZS,42.069
+Benin,BEN,2007,Urban population (% of total population),SP.URB.TOTL.IN.ZS,41.558
+Benin,BEN,2006,Urban population (% of total population),SP.URB.TOTL.IN.ZS,41.049
+Benin,BEN,2005,Urban population (% of total population),SP.URB.TOTL.IN.ZS,40.543
+Benin,BEN,2004,Urban population (% of total population),SP.URB.TOTL.IN.ZS,40.039
+Benin,BEN,2003,Urban population (% of total population),SP.URB.TOTL.IN.ZS,39.536
+Benin,BEN,2002,Urban population (% of total population),SP.URB.TOTL.IN.ZS,39.036
+Benin,BEN,2001,Urban population (% of total population),SP.URB.TOTL.IN.ZS,38.65
+Benin,BEN,2000,Urban population (% of total population),SP.URB.TOTL.IN.ZS,38.333
+Benin,BEN,1999,Urban population (% of total population),SP.URB.TOTL.IN.ZS,38.015
+Benin,BEN,1998,Urban population (% of total population),SP.URB.TOTL.IN.ZS,37.699
+Benin,BEN,1997,Urban population (% of total population),SP.URB.TOTL.IN.ZS,37.385
+Benin,BEN,1996,Urban population (% of total population),SP.URB.TOTL.IN.ZS,37.071
+Benin,BEN,1995,Urban population (% of total population),SP.URB.TOTL.IN.ZS,36.758
+Benin,BEN,1994,Urban population (% of total population),SP.URB.TOTL.IN.ZS,36.447
+Benin,BEN,1993,Urban population (% of total population),SP.URB.TOTL.IN.ZS,36.136
+Benin,BEN,1992,Urban population (% of total population),SP.URB.TOTL.IN.ZS,35.827
+Benin,BEN,1991,Urban population (% of total population),SP.URB.TOTL.IN.ZS,35.247
+Benin,BEN,1990,Urban population (% of total population),SP.URB.TOTL.IN.ZS,34.485
+Benin,BEN,1989,Urban population (% of total population),SP.URB.TOTL.IN.ZS,33.73
+Benin,BEN,1988,Urban population (% of total population),SP.URB.TOTL.IN.ZS,32.985
+Benin,BEN,1987,Urban population (% of total population),SP.URB.TOTL.IN.ZS,32.246
+Benin,BEN,1986,Urban population (% of total population),SP.URB.TOTL.IN.ZS,31.517
+Benin,BEN,1985,Urban population (% of total population),SP.URB.TOTL.IN.ZS,30.796
+Benin,BEN,1984,Urban population (% of total population),SP.URB.TOTL.IN.ZS,30.086
+Benin,BEN,1983,Urban population (% of total population),SP.URB.TOTL.IN.ZS,29.384
+Benin,BEN,1982,Urban population (% of total population),SP.URB.TOTL.IN.ZS,28.692
+Benin,BEN,1981,Urban population (% of total population),SP.URB.TOTL.IN.ZS,28.01
+Benin,BEN,1980,Urban population (% of total population),SP.URB.TOTL.IN.ZS,27.339
+Benin,BEN,1979,Urban population (% of total population),SP.URB.TOTL.IN.ZS,26.676
+Benin,BEN,1978,Urban population (% of total population),SP.URB.TOTL.IN.ZS,25.552
+Benin,BEN,1977,Urban population (% of total population),SP.URB.TOTL.IN.ZS,24.293
+Benin,BEN,1976,Urban population (% of total population),SP.URB.TOTL.IN.ZS,23.079
+Benin,BEN,1975,Urban population (% of total population),SP.URB.TOTL.IN.ZS,21.904
+Benin,BEN,1974,Urban population (% of total population),SP.URB.TOTL.IN.ZS,20.775
+Benin,BEN,1973,Urban population (% of total population),SP.URB.TOTL.IN.ZS,19.689
+Benin,BEN,1972,Urban population (% of total population),SP.URB.TOTL.IN.ZS,18.648
+Benin,BEN,1971,Urban population (% of total population),SP.URB.TOTL.IN.ZS,17.647
+Benin,BEN,1970,Urban population (% of total population),SP.URB.TOTL.IN.ZS,16.691
+Benin,BEN,1969,Urban population (% of total population),SP.URB.TOTL.IN.ZS,15.776
+Benin,BEN,1968,Urban population (% of total population),SP.URB.TOTL.IN.ZS,14.903
+Benin,BEN,1967,Urban population (% of total population),SP.URB.TOTL.IN.ZS,14.069
+Benin,BEN,1966,Urban population (% of total population),SP.URB.TOTL.IN.ZS,13.275
+Benin,BEN,1965,Urban population (% of total population),SP.URB.TOTL.IN.ZS,12.519
+Benin,BEN,1964,Urban population (% of total population),SP.URB.TOTL.IN.ZS,11.801
+Benin,BEN,1963,Urban population (% of total population),SP.URB.TOTL.IN.ZS,11.118
+Benin,BEN,1962,Urban population (% of total population),SP.URB.TOTL.IN.ZS,10.47
+Benin,BEN,1961,Urban population (% of total population),SP.URB.TOTL.IN.ZS,9.856
+Benin,BEN,1960,Urban population (% of total population),SP.URB.TOTL.IN.ZS,9.275
+Benin,BEN,2007,"Motor vehicles (per 1,000 people)",IS.VEH.NVEH.P3,22
+Benin,BEN,2007,"Passenger cars (per 1,000 people)",IS.VEH.PCAR.P3,18
